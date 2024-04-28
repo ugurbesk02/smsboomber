@@ -1,9 +1,6 @@
-
-
-
 import subprocess, sys, os, webbrowser, pyfiglet
 
-k="<"*12;e=">"*12;banr=pyfiglet.figlet_format("UGURBESK02");print(f"\033[1;36m{banr}\n\n\033[1;35mTELEGRAM: @ugurfitt1\n\n")
+k="<"*12;e=">"*12;banr=pyfiglet.figlet_format("UGURFITT1");print(f"\033[1;36m{banr}\n\n\033[1;35mTELEGRAM: @ugurfitt1\n\n")
 
 try:
     import requests, urllib3, uuid
@@ -837,7 +834,7 @@ def send(number, amount, worker_amount):
     functions = [a101, anadolu, aygaz, bim, bisu, ceptesok, coffy, defacto, englishhome, file, gez, gofody, goyakit, hayat, heyscooter, hizliecza, hop, ikinciyeni, ipragraz, istegelsin, jetle, joker, kalmasin, karma, kimgbister, macrocenter, marti, migros, mopas, ninewest, oliz, pawapp, paybol, petrolofisi, pinar, pisir, qumpara, rabbit, roombadi, saka, scooby, signalall, superpedestrian, sushico, tazi, tiklagelsin, total, weescooter, yotto]
     random.shuffle(functions)
     clear()
-    print(f"{number} SMS BOMB BAŞLATILDI...!\n")
+    print(f"{number} UGURFİTT1 SMS BOMB BAŞLATILDI...!\n")
     if amount == 0:
         with concurrent.futures.ThreadPoolExecutor(max_workers=worker_amount) as executor:
             i = 0
@@ -850,8 +847,8 @@ def send(number, amount, worker_amount):
         with concurrent.futures.ThreadPoolExecutor(max_workers=worker_amount) as executor:
             for i in range(amount):
                 executor.submit(send_service, number, functions[i % 49])
-    print("\nGönderim tamamlandı!")
-    print(f"{all_sends} SMS, {int(time.perf_counter()) - start_time} saniye içerisinde gönderildi. {success_sends} başarılı, {failed_sends} başarısız.\n")
+    print("\nGönderim tamamlandı İG/ugurfitt1!")
+    print(f"{all_sends} SMS, {int(time.perf_counter()) - start_time} saniye içerisinde gönderildi. İG/ugurfitt1 {success_sends} başarılı, {failed_sends} başarısız.\n")
     all_sends = 0
     success_sends = 0
     failed_sends = 0
@@ -869,10 +866,10 @@ def get_number():
                 return number
             else:
                 clear()
-                print(f"Numarayı doğru gir la ugur seni siker yoksa")
+                print(f"Numarayı doğru gir la ugur neneni siker yoksa")
         except:
             clear()
-            print(f"Lütfen bir numara yazın.")
+            print(f"Numarayı doğru gir la ugur neneni siker yoksa.")
 
 def get_amount():
     global clear
@@ -892,7 +889,7 @@ def get_worker_amount():
     global clear
     while True:
         try:
-            worker_amount = int(input(f"Thread sayısını girin. Tavsiye edilen 5-100 arasıdır ama 100 basarsan daha iyi hee .\n[?] : "))
+            worker_amount = int(input(f"Thread sayısını girin. Tavsiye edilen 5-100 arasıdır.\n[?] : "))
             if worker_amount >= 1:
                 return worker_amount
             else:
@@ -905,7 +902,7 @@ def get_worker_amount():
 def restart():
     global clear
     while True:
-        question = input(f"Programdan çıkılsın mı?\n[Y/N] : ").upper().replace(" ", "")
+        question = input(f"ugurfitt1 programdan çıkılsın mı?\n[Y/N] : ").upper().replace(" ", "")
         if question == "Y":
             quit()
         elif question == "N":
